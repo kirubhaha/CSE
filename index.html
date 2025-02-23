@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Department | College</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        input[type="text"] {
+          padding: 5px;
+          width: 200px;
+          font-size: 16px;
+          border-radius: 10px;
+        }
+        ul#results {
+            list-style: none;
+            padding: 0;
+            margin-top: 5px;
+            background: #fff;
+            border: 1px solid #ccc;
+            width: 200px;
+            position: absolute; 
+            z-index: 1000; 
+            display: none;
+            max-height: 150px; 
+            overflow-y: auto; 
+        }
+        ul#results li {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        ul#results li:last-child {
+            border-bottom: none;
+        }
+        ul#results li a {
+            text-decoration: none;
+            color: #333;
+        }
+        ul#results li:hover {
+            background: #f0f0f0;
+        }
+      </style>
+</head>
+<body>
+    <div>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="college.png" alt="College Logo" class="college-logo">
+                <div class="college-info">
+                    <h1 class="college-name">Saranathan College of Engineering</h1>
+                    <p class="autonomous-text">An Autonomous Institution</p>
+                </div>
+            </div>
+        </div>
+    </header><br>
+    <nav class="navbar">
+        <ul>
+            <li><a href="local.html" >SARA Home</a>
+            <li id="searchip">
+                <input type="text" id="searchInput" placeholder="Search..." onkeyup="search()">
+                
+            </li>
+        </ul>
+
+       </nav>
+       <ul id="results"></ul>
+    <div class="container">
+
+        <div class="vision">
+            <h1>Vision</h1>
+            <ul>
+            <li>To evolve as a center of academic excellence in Computer Science and Engineering.</li><br>
+            <li>To foster advanced research in emerging technologies.</li><br>
+            <li>To contribute to innovation and problem-solving in the field of computing.</li>
+            </ul>
+        </div>
+        <div class="mission">
+            <h1>Mission</h1>
+            <ul>
+                <li>To inculcate in students a profound understanding of fundamentals related to discipline.</li><br>
+                <li>To inculcate skills, attitudes and their applications in solving real world problems with an inclination towards social issues and research.</li><br>
+                <li>To promote research in the emerging areas of computer science and technology.</li>
+                </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 CSE Department. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+            const searchData = [
+            { name: "Programming in C", link: "c_programming.html" },
+            { name: "Data Structures", link: "data_structures.html" },
+            { name: "Object-Oriented Programming (OOPS)", link: "syllabus.html" },
+            { name: "Design and Analysis of Algorithms (DAA)", link: "daa.html" },
+            { name: "Database Management Systems (DBMS)", link: "dbms.html" },
+            { name: "Operating Systems (OS)", link: "os.html" },
+            { name: "Computer Networks (CN)", link: "cn.html" },
+            { name: "Theory of Computation (TOC)", link: "toc.html" },
+            { name: "Artificial Intelligence (AI)", link: "ai.html" },
+            { name: "Machine Learning (ML)", link: "ml.html" },
+            { name: "Web Technology", link: "web_technology.html" },
+            { name: "Software Engineering (SE)", link: "se.html" },
+            { name: "Computer Architecture", link: "computer_architecture.html" },
+            { name: "Compiler Design", link: "compiler_design.html" },
+            { name: "Cloud Computing", link: "cloud_computing.html" },
+            { name: "Cyber Security", link: "cyber_security.html" },
+            { name: "Internet of Things (IoT)", link: "iot.html" },
+            { name: "Blockchain Technology", link: "blockchain.html" },
+            { name: "Mobile Computing", link: "mobile_computing.html" },
+            { name: "Big Data Analytics", link: "big_data.html" }
+        ];
+
+            function search() {
+                let input = document.getElementById('searchInput').value.toLowerCase();
+                let resultsContainer = document.getElementById('results');
+                resultsContainer.innerHTML = '';
+
+                if (input === '') {
+                    resultsContainer.style.display = 'none';
+                    return;
+                }
+
+                let filteredData = searchData.filter(item => item.name.toLowerCase().includes(input));
+
+                if (filteredData.length === 0) {
+                    let li = document.createElement('li');
+                    li.textContent = 'No results found';
+                    resultsContainer.appendChild(li);
+                } else {
+                    filteredData.forEach(item => {
+                        let li = document.createElement('li');
+                        let a = document.createElement('a');
+                        a.href = item.link;
+                        a.innerText = item.name;
+                        li.appendChild(a);
+                        resultsContainer.appendChild(li);
+                    });
+                }
+
+                resultsContainer.style = 'display: block; margin-top:13%; position:absolute; left:40%';
+            }
+
+    </script>
+</body>
+</html>
