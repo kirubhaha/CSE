@@ -1,0 +1,748 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  header {
+    background: linear-gradient(to right, #0f4c75, #3282b8);
+    color: white;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  .college-logo {
+    width: 80px;
+    height: 80px;
+    animation: bounce 2s infinite;
+  }
+  
+  .college-info {
+    text-align: center;
+  }
+  
+  .college-name {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .autonomous-text {
+    font-size: 16px;
+    margin: 0;
+    color: #f1c40f;
+    font-weight: bold;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 5%;
+    width: 100%;
+    position: relative; 
+    top: auto; 
+    margin-top: 15%;
+}
+
+@keyframes txtslide {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+}
+  
+  
+  a {
+    color: #3282b8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background: #0f4c75;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 5%;
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  .footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    .header-container {
+      text-align: center;
+      width: 100%;
+    }
+    .logo-container {
+      flex-direction: column;
+    }
+    .college-logo {
+      width: 60px;
+      height: 60px;
+    }
+    .college-name {
+      font-size: 20px;
+    }
+    .autonomous-text {
+      font-size: 14px;
+    }
+    .container {
+      margin-top: 10%;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin: 150px auto 50px;
+    }
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .college-logo {
+      width: 50px;
+      height: 50px;
+    }
+    .college-name {
+      font-size: 18px;
+    }
+    .autonomous-text {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 15px 0;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .search-container {
+      margin-top: 15px;
+    }
+  
+    #searchInput {
+      width: 90%;
+    }
+  
+    .container {
+      align-items: center;
+      padding: 0 5%;
+      margin-top: 10%;
+    }
+  
+    .vision,
+    .mission {
+      width: 100%;
+      max-width: 350px;
+      margin: 15px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 12px 0;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-container {
+      margin-top: 10px;
+    }
+  
+    #searchInput {
+      width: 95%;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 5%;
+      margin-top: 10%;
+    }
+  
+    .vision,
+    .mission {
+      width: 100%;
+      max-width: 330px;
+      margin: 15px auto;
+      margin-right: 50%;
+      left: 5;
+    }
+  }
+  @media (max-width: 768px) {
+    .header-container {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .logo-container {
+      flex-direction: column;
+    }
+  
+    .college-logo {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .college-name {
+      font-size: 20px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
+      top: 110px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  
+    #searchip {
+      width: 80%;
+      right: auto;
+      position: relative;
+      margin-top: 40px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 220px;
+    }
+  
+    .vision,
+    .mission {
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+      margin: 15px auto;
+    }
+  
+    /* .table-container {
+      overflow-x: auto;
+      margin: 180px auto 50px;
+    }
+  
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    } */
+  }
+  
+  @media (max-width: 480px) {
+    .college-logo {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .college-name {
+      font-size: 18px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      padding: 12px 0;
+      top: 110px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #searchip {
+      width: 100%;
+      margin-top: 40px;
+    }
+  
+    .container {
+      align-items: center;
+      margin-top: 300px;
+    }
+  
+    .vision,
+    .mission {
+      width: 100%;
+      max-width: 330px;
+      text-align: center;
+      margin: 15px auto;
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #f0f8ff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 330px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 255, 0.5);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+    color: #0f4c75;
+}
+
+.card ul {
+    list-style-position: inside;
+    padding-left: 0%;
+    margin: 10px 0;
+    font-size: 17px;
+    color: #0f4c75;
+    animation: txtslide 5s;
+}
+  
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quick-links ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+  }
+  
+  .quick-links ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .quick-links ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .quick-links ul li:hover {
+    background: #f0f0f0;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes txtslide {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+      height: auto;
+    }
+  }
+  
+         
+  
+          .year {
+              background-color: #0f4c75;
+              color: white;
+              padding: 10px;
+              margin:100px;
+              text-align: center;
+              font-size: xx-large;
+              border-radius: 10px 10px 0 0;
+          }
+  
+          .sem {
+              background-color: #1b7dbe;
+              text-align: center;
+              color: white;
+              padding: 8px;
+              font-size: large;
+              border-radius: 6px 6px 0 0;
+          }
+  
+          table {
+              width: 80%;
+              border-collapse: collapse;
+              border-radius: 10px;
+              margin-bottom: 10px;
+              margin-left: 10%;
+          }
+  
+          .inner-table {
+              width: 100%;
+              margin: 5px 0;
+          }
+  
+          .sub-table {
+              width: 100%;
+              border: 1px solid black;
+              border-radius: 4px;
+              margin: 0;
+          }
+  
+          .sub-table th {
+              background-color: #4279ca;
+              color: white;
+              padding: 8px;
+              border: 1px solid black;
+              text-align: left;
+  
+          }
+  
+          .sub-table td {
+              border: 1px solid black;
+              padding: 6px;
+              text-align: left;
+              min-width:100px ;
+              max-width: 100px;
+          }
+  
+          .sub-table a {
+              text-decoration: none;
+              color: white;
+              background-color: #0f4c75;
+              padding: 4px 8px;
+              border-radius: 4px;
+          }
+  
+          .sub-table a:hover {
+              background-color: #1b7dbe;
+          }
+       
+          @media (max-width: 760px) {
+            .sub-table, .inner-table {
+                width: 100%;
+            }
+        
+            th, td {
+                font-size: 14px;
+                padding: 8px;
+            }
+        
+            .sem, .year {
+                font-size: 16px;
+                text-align: center;
+            }
+        
+            td a {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            .inner-table, .sub-table {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        
+            table {
+                display: block;
+                width: 100%;
+                overflow-x: auto;
+            }
+        
+            th, td {
+                font-size: 14px;
+                padding: 10px;
+                text-align: left;
+            }
+        
+            .year, .sem {
+                font-size: 16px;
+                text-align: center;
+                padding: 10px;
+            }
+        
+            td a {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 760px) {
+            td:nth-child(3) {
+                max-width: 180px; 
+            }
+        
+            th, td {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            td:nth-child(3) {
+                max-width: 150px;
+            }
+        
+            th, td {
+                font-size: 12px;
+                padding: 6px;
+            }
+        }
+.navbar {
+    background: linear-gradient(to right, #0f4c75, #3282b8);
+    color: white;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 150px; 
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 40px; 
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+    transform: scale(1.1);
+}
+
+@media (max-width: 760px) {
+    .navbar {
+        height: 50px;
+        top: 90px;
+    }
+
+    .navbar ul {
+        gap: 20px; 
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        height: 45px;
+        top: 85px;
+    }
+
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+}
+
+
+
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@keyframes txtslide{
+  from{
+      margin-top: 100%;
+  }
+  to{
+      margin-top: 0%;
+  }
+}
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+.video-card {
+  position: relative;
+  width: 300px; 
+  height: 180px; 
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+.video-card iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media (max-width: 1200px) {
+  .video-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  .video-card {
+      width: 90%;
+      height: auto;
+  }
+}
