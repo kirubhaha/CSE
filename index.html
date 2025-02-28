@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Department | College</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        input[type="text"] {
+          padding: 5px;
+          width: 200px;
+          font-size: 16px;
+          border-radius: 10px;
+        }
+        ul#results {
+            list-style: none;
+            padding: 0;
+            margin-top: 5px;
+            background: #fff;
+            border: 1px solid #ccc;
+            width: 200px;
+            position: absolute; 
+            z-index: 1000; 
+            display: none;
+            max-height: 150px; 
+            overflow-y: auto; 
+        }
+        ul#results li {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        ul#results li:last-child {
+            border-bottom: none;
+        }
+        ul#results li a {
+            text-decoration: none;
+            color: #333;
+        }
+        ul#results li:hover {
+            background: #f0f0f0;
+        }
+      </style>
+</head>
+<body>
+    <div>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="college.png" alt="College Logo" class="college-logo">
+                <div class="college-info">
+                    <h1 class="college-name">Saranathan College of Engineering</h1>
+                    <p class="autonomous-text">An Autonomous Institution</p>
+                    <h1 class="college-name">Computer Science and Engineering</h1>
+                </div>
+            </div>
+        </div>
+    </header><br>
+    <nav class="navbar">
+        <ul>
+            <li><a href="local.html" style="font-size: x-large;">Home</a></li>
+            <strong><li style="color: rgb(234, 250, 13);font-size: x-large;">Knowledge Portal</Portal></li></strong>
+        </ul>
+    </nav>
+    
+       <ul id="results"></ul>
+       <div class="container">
+        <h1 style="min-width: 100%;color: rgb(19, 63, 255);font-size: xx-large;">Computer Science and Engineering</h1>
+        <div class="card">
+            <ul>
+            <h2>Vision</h2>
+            <li><p>To evolve as a center of academic excellence in Computer Science and Engineering.</p></li>
+            <li><p>To foster advanced research in emerging technologies.</p></li>
+           <li><p>To contribute to innovation and problem-solving in the field of computing.</p></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <ul>
+            <h2>Mission</h2>
+            <li><p>To inculcate in students a profound understanding of fundamentals related to discipline.</p></li>
+            <li><p>To develop skills and attitudes for solving real-world problems, focusing on social issues and research.</p></li>
+            <li><p>To promote research in emerging areas of computer science and technology.</p></li>
+            </ul>
+        </div>
+
+        <div class="card quick-links">
+            <ul>
+            <h2>Quick Links</h2>
+          
+                <li><a href="https://leetcode.com/" target="_blank">LeetCode</a></li>
+                <li><a href="https://nptel.ac.in/" target="_blank">NPTEL</a></li>
+                <li><a href="https://www.javatpoint.com/" target="_blank">JavaTpoint</a></li>
+                <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="video-container">
+      
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=J_d1fJy90GY&list=PLbRMhDVUMngcx5xHChJ-f7ofxZI4JzuQR" target="_blank">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/J_d1fJy90GY?si=ufv_Vzmb5OMxasT9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </a>
+            <p>Java Programming</p>
+        </div>
+
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=DP2hCccSVvI&list=PLVJwWHqgHJMkoPss8K8M2JjPvPQ961V-I" target="_blank">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DP2hCccSVvI?si=r9QIVcIUcr7dOQN-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </a>
+            <p>Blockchain Technology</p>
+        </div>
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=IoL9Ve2SRwQ&list=PLIwC9bZ0rmjSkm1VRJROX4vP2YMIf4Ebh" target="_blank">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IoL9Ve2SRwQ?si=W57Fqjs5WgwRrxv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </a>
+            <p>Database Management Systems</p>
+        </div>
+
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=dHsHP9RrXBw&list=PLJ5C_6qdAvBH-JNRIlupFb44miyx9M8JD" target="_blank">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dHsHP9RrXBw?si=6UDThMabnO-BUfl7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </a>
+            <p>Operating Systems</p>
+        </div>
+    </div>
+
+    <table>
+        <tbody>
+           
+            <tr>
+                <td class="year"><strong>1<sup>st</sup> Year</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="inner-table">
+                        <tr>
+                            <th class="sem">Semester 1</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="sub-table">
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th>Subject code</th>
+                                        <th>Name of Subject</th>
+                                        <th>Materials</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>GE8151</td>
+                                        <td>Problem solving in<br> python programming</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th class="sem">Semester 2</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="sub-table">
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th>Subject code</th>
+                                        <th>Name of Subject</th>
+                                        <th>Materials</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CS3251</td>
+                                        <td>Programming in C</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="year"><strong>2<sup>nd</sup> Year</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="inner-table">
+                        <tr>
+                            <th class="sem">Semester 3</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="sub-table">
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th>Subject code</th>
+                                        <th>Name of Subject</th>
+                                        <th>Materials</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CS3351</td>
+                                        <td>Digital Principles and<br> Computer Organization</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                
+                                   
+                                    <tr>
+                                        <td>2</td>
+                                        <td>CS3352</td>
+                                        <td>Foundation of Data<br> Science</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>CS3301</td>
+                                        <td>Data Structures</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>CS3391</td>
+                                        <td>Object Oriented <br>Programming Language</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+          
+                       
+                        <tr>
+                            <th class="sem">Semester 4</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="sub-table">
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th>Subject code</th>
+                                        <th>Name of Subject</th>
+                                        <th>Materials</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CS3452</td>
+                                        <td>Theory of Computation</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>CS3491</td>
+                                        <td>Artificial Intelligence and<br>  Machine learning</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>CS3492</td>
+                                        <td>Database Management<br> Systems</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>CS3401</td>
+                                        <td>Algorithms</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>CS3451</td>
+                                        <td>Introduction to <br>Operating Systems</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+                        <tr>
+                            <td class="year"><strong>3<sup>rd</sup> Year</strong></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="inner-table">
+                        <tr>
+                            <th class="sem">Semester 5</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="sub-table">
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th>Subject code</th>
+                                        <th>Name of Subject</th>
+                                        <th>Materials</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CS3591</td>
+                                        <td>Computer Networks</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>CS3501</td>
+                                        <td>Compiler Design</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>CB3491</td>
+                                        <td>Cryptography and<br> Cyber Security</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>CS3551</td>
+                                        <td>Distributed Computing</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+                        <tr>
+                            <th class="sem">Semester 6</th>
+                        </tr>
+                        <tr>
+                            <td class="inner-td">
+                                <table class="sub-table">
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th>Subject code</th>
+                                        <th>Name of Subject</th>
+                                        <th>Materials</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CCS356</td>
+                                        <td>Object Oriented <br>Software Engineering</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>CS3691</td>
+                                        <td>Embedded Systems <br>and IoT</td>
+                                        <td><a href="#">Click here</a></td>
+                                    </tr>
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+                  
+        </tbody>
+    </table>
+</body>
+</html>
