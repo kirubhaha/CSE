@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Department | College</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        input[type="text"] {
+          padding: 5px;
+          width: 200px;
+          font-size: 16px;
+          border-radius: 10px;
+        }
+        ul#results {
+            list-style: none;
+            padding: 0;
+            margin-top: 5px;
+            background: #fff;
+            border: 1px solid #ccc;
+            width: 200px;
+            position: absolute; 
+            z-index: 1000; 
+            display: none;
+            max-height: 150px; 
+            overflow-y: auto; 
+        }
+        ul#results li {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        ul#results li:last-child {
+            border-bottom: none;
+        }
+        ul#results li a {
+            text-decoration: none;
+            color: #333;
+        }
+        ul#results li:hover {
+            background: #f0f0f0;
+        }
+      </style>
+</head>
+<body>
+    <div>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="college.png" alt="College Logo" class="college-logo">
+                <div class="college-info">
+                    <h1 class="college-name">Saranathan College of Engineering</h1>
+                    <p class="autonomous-text">An Autonomous Institution</p>
+                    <h1 class="college-name">Computer Science and Engineering</h1>
+                </div>
+            </div>
+        </div>
+    </header><br>
+    <nav class="navbar">
+        <ul>
+            <li><a href="local.html" style="font-size: x-large;">Home</a></li>
+            <strong><li style="color: rgb(234, 250, 13);font-size: x-large;">Knowledge Portal</Portal></li></strong>
+        </ul>
+    </nav>
+    
+       <ul id="results"></ul>
+       <div class="container">
+        <h1 style="min-width: 100%;color: rgb(19, 63, 255);font-size: xx-large;">Computer Science and Engineering</h1>
+        <div class="card">
+            <ul>
+            <h2>Vision</h2>
+            <li><p>To evolve as a centre of academic excellence and advanced research in Computer Science and Engineering discipline</p></li>
+            
+            </ul>
+        </div>
+
+        <div class="card">
+            <ul>
+            <h2>Mission</h2>
+            <li><p>To inculcate in students a profound understanding of fundamentals related to discipline</p></li>
+            <li><p>To inculcate skills, attitudes and their applications in solving real world problems with an inclination towards social issues and research</p></li>
+            <li><p>To promote research in the emerging areas of computer science and technology
+            </p></li>
+            </ul>
+        </div>
+
+        <div class="card quick-links">
+            <ul>
+            <h2>Quick Links</h2>
+          
+                <li><a href="https://leetcode.com/" target="_blank">LeetCode</a></li>
+                <li><a href="https://nptel.ac.in/" target="_blank">NPTEL</a></li>
+                <li><a href="https://www.javatpoint.com/" target="_blank">JavaTpoint</a></li>
+                <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="video-container">
+      
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=J_d1fJy90GY&list=PLbRMhDVUMngcx5xHChJ-f7ofxZI4JzuQR" target="_blank">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/J_d1fJy90GY?si=ufv_Vzmb5OMxasT9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </a>
+            <p>Java Programming</p>
+        </div>
+
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=DP2hCccSVvI&list=PLVJwWHqgHJMkoPss8K8M2JjPvPQ961V-I" target="_blank">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DP2hCccSVvI?si=r9QIVcIUcr7dOQN-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </a>
+            <p>Blockchain Technology</p>
+        </div>
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=IoL9Ve2SRwQ&list=PLIwC9bZ0rmjSkm1VRJROX4vP2YMIf4Ebh" target="_blank">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IoL9Ve2SRwQ?si=W57Fqjs5WgwRrxv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </a>
+            <p>Database Management Systems</p>
+        </div>
+
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=dHsHP9RrXBw&list=PLJ5C_6qdAvBH-JNRIlupFb44miyx9M8JD" target="_blank">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dHsHP9RrXBw?si=6UDThMabnO-BUfl7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </a>
+            <p>Operating Systems</p>
+        </div>
+    </div>
+    <section id="video-links-section" style="width:80%; margin: 20px auto 0;">
+        <h2 style="color:#0f4c75; margin-bottom:8px;">Video Lecture for Deep understanding</h2>
+        <table class="sub-table video-links-table">
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Title</th>
+                    <th>Video Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Python List</td>
+                    <td><a href="https://drive.google.com/file/d/1-WP0tOEg-roBwyVmPMpLA89-toBHw_Nj/view?pli=1" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Python Data Wrangling</td>
+                    <td><a href="https://drive.google.com/file/d/1lahjTcPfvtIQSsZbqu5gUmDQY-LOOLzs/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Exploratory Data Analysis</td>
+                    <td><a href="https://drive.google.com/file/d/1e6YLbWO9mu1o5Z5tjwUwalNF2-1J7JS9/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Syntax Analyzer</td>
+                    <td><a href="https://drive.google.com/file/d/1l0AB1TjllqvDpbSxE7AmV-wnAcnpPlsA/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Data Path</td>
+                    <td><a href="https://drive.google.com/file/d/1oeCiwLPkVia6qlgSdSZy2akG64eJnehu/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Consensus</td>
+                    <td><a href="https://drive.google.com/file/d/1YkfWqQybrqa8ecJBQdHwFpSOG_WhkhC2/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>C</td>
+                    <td><a href="https://drive.google.com/file/d/10jjYpKqag2dVd6N8nkXH3ly70VnfSBgS/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Taxonomy</td>
+                    <td><a href="https://drive.google.com/file/d/1v8LUd99epsrkS_8FXKm_AEmQhzpVELJK/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Memory</td>
+                    <td><a href="https://drive.google.com/file/d/13XyYqxWOWHM2b2r3ys6Q8VrZuSngm20r/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Normalization</td>
+                    <td><a href="https://drive.google.com/file/d/16dibIHRlUT7DgCskhPeApjAHTvQ6bp0X/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Exception</td>
+                    <td><a href="https://drive.google.com/file/d/1fJXpXBiR9W3JZjWGXYepI_lcjKSY1nhr/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Indexing and Hashing</td>
+                    <td><a href="https://drive.google.com/file/d/1tIsLKurm_SEh3RG37nQLvYBsQ3Rwtilh/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Business Analytics</td>
+                    <td><a href="https://drive.google.com/file/d/1QNhPKoHLkWcHHXeU6pi1bMWLVoTmAuo1/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Testing</td>
+                    <td><a href="https://drive.google.com/file/d/1l5wQvOc1Y-VafGk7Tq41md5TyFZPVcxc/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>SQL</td>
+                    <td><a href="https://drive.google.com/file/d/1vVN6fA6gmhHSpkhwZcFY46hpE8tPfrds/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>State Space</td>
+                    <td><a href="https://drive.google.com/file/d/1ho_L6xzxxcFYNLB9J-qdqgideIzAlB2e/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Branch and Bound</td>
+                    <td><a href="https://drive.google.com/file/d/1tlTVYSaW68nyZoH5lSEUTkzeTXiTT7kE/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Authentication</td>
+                    <td><a href="https://drive.google.com/file/d/1Jy9vGr5LIdU4D5izZSSADZ3lk8x1qwhV/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Turing Machine</td>
+                    <td><a href="https://drive.google.com/file/d/1CG9wp_oF2WDLKr_JFrG95kQfOJ1ntlLs/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Cloud Resource</td>
+                    <td><a href="https://drive.google.com/file/d/19SycSJnjGNSPB6TqKYvmOnvPW3vMIFih/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Big Data</td>
+                    <td><a href="https://drive.google.com/file/d/1NMO0siwDaOfRv8u54SzYdJjDIXHfRp4a/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Suppor Vector Machine</td>
+                    <td><a href="https://drive.google.com/file/d/1jOCFO9QU3FBzM0OEescmE73Biu-nNLGI/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Data Warehouse</td>
+                    <td><a href="https://drive.google.com/file/d/1_chGO0sMtMzpvE9XRTWbfafq59IIOSUG/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Data Science</td>
+                    <td><a href="https://drive.google.com/file/d/1oLXLWQhBTdGAFNG-9lrZs2FzGOiZlr0O/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Routing</td>
+                    <td><a href="https://drive.google.com/file/d/1dsrId7fRQ2jyl-d4xB__ee6SjYJ3wAGo/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>OSI Layers</td>
+                    <td><a href="https://drive.google.com/file/d/1CyK33p2LytPupkPHCUrCOHthjWim7gl2/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Firewall</td>
+                    <td><a href="https://drive.google.com/file/d/16laLrw915aXVDJwqRD2kXFu6D4MGpSii/view" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>Software Architectural Pattern</td>
+                    <td><a href="https://drive.google.com/file/d/1wWTEilsk4ZpgoHaPqV5YrxL4YfQ4Tday/view?usp=sharing" target="_blank">Click Here</a></td>
+                </tr>
+                 <tr>
+                    <td>29</td>
+                    <td>Ford-Fulkerson Algorithm</td>
+                    <td><a href="https://drive.google.com/file/d/1XrSxy12il03ckP-xrxaW5diUM7KsDy90/view?usp=sharing" target="_blank">Click Here</a></td>
+                </tr>
+                 <tr>
+                    <td>30</td>
+                    <td>Address Resolution Protocol</Address></td>
+                    <td><a href="https://drive.google.com/file/d/17DlYRsNOLl62cL0qscAzXas2zB65uqEq/view?usp=sharing" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>Haffmann Encoding</Address></td>
+                    <td><a href="https://drive.google.com/file/d/1VRlVQTHXdOH8MrNsDb2QAEc3zchL6fwI/view?usp=sharing" target="_blank">Click Here</a></td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>Simplex Problem</Address></td>
+                    <td><a href="https://drive.google.com/file/d/1bkdKBUmcvuqgi-3cBnhGdSYFvNvKTKCh/view?usp=sharing" target="_blank">Click Here</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <table>
+        <tbody>
+           
+            
+
+            <tr>
+                <td class="year"><strong>2<sup>nd</sup> Year</strong></td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="inner-table">
+                        <tr>
+                            <th class="sem">Semester 3</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="sub-table">
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th>Subject code</th>
+                                        <th>Name of Subject</th>
+                                        <th>Materials</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CS3352</td>
+                                        <td>Foundation of Data<br>Sciene</td>
+                                        <td><a href="https://drive.google.com/drive/folders/18sckt0i-bA-YrXFOW_gcoUlNhDYC8q2S?usp=sharing">Click here</a></td>
+                                    </tr>
+                                
+                                   
+                                    <tr>
+                                        <td>2</td>
+                                        <td>CS3391</td>
+                                        <td>Object Oriented<br> Programming</td>
+                                        <td><a href="https://drive.google.com/drive/folders/1671dHroknChYKvr6AkWXUBudQtyFmLlG?usp=sharing">Click here</a></td>
+                                    </tr>
+                                    
+                                </table>
+                            </td>
+                        </tr>
+          
+                       
+                        <tr>
+                            <th class="sem">Semester 4</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="sub-table">
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th>Subject code</th>
+                                        <th>Name of Subject</th>
+                                        <th>Materials</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CS3451</td>
+                                        <td>Introduction to <br> Operating Systems</td>
+                                        <td><a href="https://drive.google.com/drive/folders/1BkRclCnIO4yIpw7__4Ry8rX8vda9pUVO?usp=sharing">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>CS3492</td>
+                                        <td>Database Management<br>  Systems</td>
+                                        <td><a href="https://drive.google.com/drive/folders/1TLu7jmDo7oKn9QzcJ1DlJ8cWNUGr2vRf?usp=sharing">Click here</a></td>
+                                    </tr>
+                                   
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+                        <tr>
+                            <td class="year"><strong>3<sup>rd</sup> Year</strong></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="inner-table">
+                        <tr>
+                            <th class="sem">Semester 5</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="sub-table">
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th>Subject code</th>
+                                        <th>Name of Subject</th>
+                                        <th>Materials</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CS3591</td>
+                                        <td>Computer Networks</td>
+                                        <td><a href="https://drive.google.com/drive/folders/1ayhjkIJ0w9Agz50vWVMs9tX0eUDZA5tZ?usp=sharing">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>CS3501</td>
+                                        <td>Compiler Design</td>
+                                        <td><a href="https://drive.google.com/drive/folders/1ayhjkIJ0w9Agz50vWVMs9tX0eUDZA5tZ?usp=sharing">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>CB3491</td>
+                                        <td>Cryptography and<br> Cyber Security</td>
+                                        <td><a href="https://drive.google.com/drive/folders/1ayhjkIJ0w9Agz50vWVMs9tX0eUDZA5tZ?usp=sharing">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>CS3551</td>
+                                        <td>Distributed Computing</td>
+                                        <td><a href="https://drive.google.com/drive/folders/1NhyXi-WbFHBn_GM7Pw-Mz6fGcbXh6obq?usp=sharing">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>CCS360</td>
+                                        <td>RECOMMENDER SYSTEMS</td>
+                                        <td><a href="https://drive.google.com/drive/folders/1oxSSCxmduVNU7LvNcg5AK1pA8Ok1t4v0?usp=sharing">Click here</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>CCS375</td>
+                                        <td>WEB TECHNOLOGIES</td>
+                                        <td><a href="https://drive.google.com/drive/folders/1U8CEajjhg6CnStGevevUcwOikFbjBRVO?usp=sharing">Click here</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+                        <tr>
+                            <th class="sem">Semester 6</th>
+                        </tr>
+                        <tr>
+                            <td class="inner-td">
+                                <table class="sub-table">
+                                   
+                                    <tr>
+                                        <td>2</td>
+                                        <td>CCS339</td>
+                                        <td>CRYPTOCURRENCY AND <br>BLOCKCHAIN TECHNOLOGIES</td>
+                                        <td><a href="https://drive.google.com/drive/folders/1LGs0lqeQkihtyhMa9F9Z0tKM6nBT48BN?usp=sharing">Click here</a></td>
+                                    </tr>
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+                  
+        </tbody>
+    </table>
+    <section id="feedback-section">
+        <h2>📋 Feedback Form</h2>
+        <form id="feedback-form">
+      
+          <label for="name">👤 Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+          <label for="designation">💼 Designation:</label>
+          <input type="text" id="designation" name="designation" placeholder="Enter your designation" required>
+      
+          <label for="department">🏢 Department:</label>
+          <input type="text" id="department" name="department" placeholder="Enter your department" required>
+      
+          <label for="date">📅 Date of Feedback:</label>
+          <input type="date" id="date" name="date" required>
+      
+          <h3>⭐ Please rate the following (1 = Poor, 4 = Excellent):</h3>
+      
+          <label>Relevance of the content to curriculum:</label>
+          <select name="relevance" required>
+            <option value="">Select rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Excellent</option>
+          </select>
+      
+          <label>Clarity of explanation:</label>
+          <select name="clarity" required>
+            <option value="">Select rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Excellent</option>
+          </select>
+      
+          <label>Quality of presentation (Audio/Video):</label>
+          <select name="quality" required>
+            <option value="">Select rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Excellent</option>
+          </select>
+      
+          <label>Alignment with course outcomes:</label>
+          <select name="alignment" required>
+            <option value="">Select rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Excellent</option>
+          </select>
+      
+          <label>Overall effectiveness:</label>
+          <select name="effectiveness" required>
+            <option value="">Select rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Excellent</option>
+          </select>
+      
+          <h3>🔎 Recommendation:</h3>
+          <div class="radio-group">
+            <label><input type="radio" name="recommendation" value="Highly Recommended" required> ✅ Highly Recommended</label>
+            <label><input type="radio" name="recommendation" value="Recommended with minor improvement" required> 👍 Recommended with minor improvement</label>
+            <label><input type="radio" name="recommendation" value="Not Recommended" required> ❌ Not Recommended</label>
+          </div>
+      
+          <h3>✍ Limitations / Area for improvement:</h3>
+          <textarea id="limitations" name="limitations" placeholder="Enter your suggestions here..." required></textarea>
+      
+          <button type="submit">🚀 Submit Feedback</button>
+          <p id="form-message"></p>
+        </form>
+      </section>
+      
+      <script>
+      document.getElementById("feedback-form").addEventListener("submit", async function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = {
+          name: form.name.value,
+          designation: form.designation.value,
+          department: form.department.value,
+          date: form.date.value,
+          relevance: form.relevance.value,
+          clarity: form.clarity.value,
+          quality: form.quality.value,
+          alignment: form.alignment.value,
+          effectiveness: form.effectiveness.value,
+          recommendation: form.recommendation.value,
+          limitations: form.limitations.value
+        };
+        try {
+          await fetch("https://script.google.com/macros/s/AKfycbxKq9sDhhR1B4SIxpa7AbxKiC_HUhXsfhl8Ke9D2hLc7aheFzDMTTv77Mu-NDJJgEya/exec", {
+            method: "POST",
+            mode: "no-cors",
+            body: JSON.stringify(data),
+            headers: { "Content-Type": "application/json" }
+          });
+          document.getElementById("form-message").textContent = "✅ Feedback submitted successfully!";
+          document.getElementById("form-message").style.color = "green";
+          form.reset();
+        } catch (error) {
+          document.getElementById("form-message").textContent = "❌ Error submitting feedback.";
+          document.getElementById("form-message").style.color = "red";
+        }
+      });
+      </script>
+</body>
+</html>
